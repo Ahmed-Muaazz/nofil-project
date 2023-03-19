@@ -1,0 +1,132 @@
+.userSection {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background_color);
+  padding: 5rem 5rem;
+  width: 100%;
+  /* height: 75vh; */
+  gap: 3rem;
+}
+
+.center_container {
+  display: flex;
+  gap: 3rem;
+}
+.buttonList {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 0.25rem;
+  width: calc(0.2 * (100vw - 16rem));
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: 70%; */
+  width: calc(0.6 * (100vw - 16rem));
+}
+.type {
+  padding: 1rem;
+}
+.api_param {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+}
+.pre_container {
+  background-color: var(--body_color);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  color: var(--primary_color);
+  font-weight: 700;
+}
+
+.example_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.case {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+th {
+  text-align: left;
+}
+td {
+  width: 33%;
+}
+
+.active {
+  border-bottom: 2px solid var(--primary_color);
+}
+
+.response_message_success {
+  color: #0e5e6f;
+}
+.response_message_UNsuccess {
+  color: #eb6440;
+}
+.param_child {
+  color: #232933;
+}
+@media screen and (max-width: 950px) {
+  .userSection {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    /* height: 75vh; */
+    gap: 2rem;
+  }
+
+  .buttonList {
+    width: 100%;
+    /* align-items: center; */
+  }
+
+  .center_container {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    width: 100%;
+  }
+  .api_param {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .param_child {
+    color: #232933;
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .pre_container {
+    padding: 1rem 1rem;
+  }
+  .param_child {
+    color: #232933;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pre_container {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .userSection {
+    flex-direction: column;
+    padding: 1rem 1rem;
+    /* height: 75vh; */
+    gap: 2rem;
+  }
+  .param_child {
+    color: #232933;
+    font-size: 0.75rem;
+  }
+}
